@@ -1,333 +1,1106 @@
-
-<!DOCTYPE HTML>
-<html xml:lang="en" lang="en" dir="ltr" class="device-nonmobile tone-light no-js" prefix="og: http://ogp.me/ns#">
+"<!DOCTYPE html>
+<html lang=\"en\">
 <head>
-<meta charset="utf-8">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google" content="notranslate" />
-<meta name="description" content="Free image hosting and sharing service, upload pictures, photo host. Offers integration solutions for uploading images to forums.">
-<meta name="keywords" content="free image hosting, image uploader, forum image hosting, image upload mod, image host, photo sharing, upload pictures">
-<title>ImgBB — Upload Image — Free Image Hosting</title>
-<link rel="preconnect" href="https://simgbb.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="//simgbb.com/8337/ibb.css">
-<script>document.documentElement.className+=" js";var devices=["phone","phablet","tablet","laptop","desktop","largescreen"],window_to_device=function(){for(var e=[480,768,992,1200,1880,2180],t=[],n="",d=document.documentElement.clientWidth||document.getElementsByTagName("body")[0].clientWidth||window.innerWidth,c=0;c<devices.length;++c)d>=e[c]&&t.push(devices[c]);for(0==t.length&&t.push(devices[0]),n=t[t.length-1],c=0;c<devices.length;++c)document.documentElement.className=document.documentElement.className.replace(devices[c],""),c==devices.length-1&&(document.documentElement.className+=" "+n),document.documentElement.className=document.documentElement.className.replace(/\s+/g," ");if("laptop"==n||"desktop"==n){var o=document.getElementById("pop-box-mask");null!==o&&o.parentNode.removeChild(o)}};window_to_device(),window.onresize=window_to_device;function jQueryLoaded(){!function(n,d){n.each(readyQ,function(d,e){n(e)}),n.each(bindReadyQ,function(e,i){n(d).bind("ready",i)})}(jQuery,document)}!function(n,d,e){function i(d,e){"ready"==d?n.bindReadyQ.push(e):n.readyQ.push(d)}n.readyQ=[],n.bindReadyQ=[];var u={ready:i,bind:i};n.$=n.jQuery=function(n){return n===d||void 0===n?u:void i(n)}}(window,document);</script>
-<link rel="alternate" hreflang="x-default" href="https://imgbb.com/">
-<link rel="alternate" hreflang="en" href="https://imgbb.com/">
-<link rel="alternate" hreflang="ar" href="https://ar.imgbb.com/">
-<link rel="alternate" hreflang="bg-bg" href="https://bg-bg.imgbb.com/">
-<link rel="alternate" hreflang="cs" href="https://cs.imgbb.com/">
-<link rel="alternate" hreflang="da" href="https://da.imgbb.com/">
-<link rel="alternate" hreflang="de" href="https://de.imgbb.com/">
-<link rel="alternate" hreflang="el" href="https://el.imgbb.com/">
-<link rel="alternate" hreflang="es" href="https://es.imgbb.com/">
-<link rel="alternate" hreflang="et-ee" href="https://et-ee.imgbb.com/">
-<link rel="alternate" hreflang="fa" href="https://fa.imgbb.com/">
-<link rel="alternate" hreflang="fi" href="https://fi.imgbb.com/">
-<link rel="alternate" hreflang="fr" href="https://fr.imgbb.com/">
-<link rel="alternate" hreflang="he" href="https://he.imgbb.com/">
-<link rel="alternate" hreflang="hr" href="https://hr.imgbb.com/">
-<link rel="alternate" hreflang="hu" href="https://hu.imgbb.com/">
-<link rel="alternate" hreflang="id" href="https://id.imgbb.com/">
-<link rel="alternate" hreflang="it" href="https://it.imgbb.com/">
-<link rel="alternate" hreflang="ja" href="https://ja.imgbb.com/">
-<link rel="alternate" hreflang="ko" href="https://ko.imgbb.com/">
-<link rel="alternate" hreflang="lt-lt" href="https://lt-lt.imgbb.com/">
-<link rel="alternate" hreflang="nb" href="https://nb.imgbb.com/">
-<link rel="alternate" hreflang="nl" href="https://nl.imgbb.com/">
-<link rel="alternate" hreflang="pl" href="https://pl.imgbb.com/">
-<link rel="alternate" hreflang="pt" href="https://pt.imgbb.com/">
-<link rel="alternate" hreflang="pt-br" href="https://pt-br.imgbb.com/">
-<link rel="alternate" hreflang="ru" href="https://ru.imgbb.com/">
-<link rel="alternate" hreflang="sk" href="https://sk.imgbb.com/">
-<link rel="alternate" hreflang="sr-rs" href="https://sr-rs.imgbb.com/">
-<link rel="alternate" hreflang="sv" href="https://sv.imgbb.com/">
-<link rel="alternate" hreflang="th" href="https://th.imgbb.com/">
-<link rel="alternate" hreflang="tr" href="https://tr.imgbb.com/">
-<link rel="alternate" hreflang="uk" href="https://uk.imgbb.com/">
-<link rel="alternate" hreflang="vi" href="https://vi.imgbb.com/">
-<link rel="alternate" hreflang="zh-cn" href="https://zh-cn.imgbb.com/">
-<link rel="alternate" hreflang="zh-tw" href="https://zh-tw.imgbb.com/"><link rel="shortcut icon" href="//simgbb.com/images/favicon.png">
-<link rel="icon" type="image/png" href="//simgbb.com/images/favicon.png" sizes="192x192">
-<link rel="apple-touch-icon" href="//simgbb.com/images/favicon.png" sizes="180x180">
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://imgbb.com" />
-<meta property="og:title" content="Upload Image — Free Image Hosting" />
-<meta property="og:site_name" content="ImgBB" />
-<meta property="og:description" content="Free image hosting and sharing service, upload pictures, photo host. Offers integration solutions for uploading images to forums." />
-<meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="Free image hosting and sharing service, upload pictures, photo host. Offers integration solutions for uploading images to forums.">
-<meta name="twitter:title" content="ImgBB — Upload Image — Free Image Hosting">
-<meta name="twitter:site" content="@imgbb_com">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Hayun — Upload Image — Free Image Hosting</title>
+    <meta name=\"description\" content=\"Free image hosting and sharing service, upload pictures, photo host. Offers integration solutions for uploading images to forums.\">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;
+            background-color: #111827;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #111827;
+            border-bottom: 1px solid #374151;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            padding: 12px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #06b6d4;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .logo:hover {
+            color: #67e8f9;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: #d1d5db;
+            border: 1px solid transparent;
+        }
+
+        .btn-ghost:hover {
+            background-color: #1f2937;
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background-color: #0891b2;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0e7490;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, #111827, #1f2937);
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            padding: 64px 0;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: bold;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: #d1d5db;
+            margin-bottom: 32px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .accent {
+            color: #06b6d4;
+            font-weight: 600;
+        }
+
+        .btn-hero {
+            padding: 12px 32px;
+            font-size: 18px;
+            margin-bottom: 48px;
+        }
+
+        /* Upload Dropzone */
+        .upload-section {
+            margin-top: 32px;
+        }
+
+        .dropzone {
+            border: 2px dashed #4b5563;
+            border-radius: 12px;
+            padding: 48px;
+            text-align: center;
+            transition: all 0.3s;
+            background-color: rgba(31, 41, 55, 0.5);
+            margin-bottom: 24px;
+        }
+
+        .dropzone:hover {
+            border-color: #6b7280;
+            background-color: rgba(31, 41, 55, 0.7);
+        }
+
+        .dropzone.drag-over {
+            border-color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.1);
+        }
+
+        .upload-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #374151;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .dropzone h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .dropzone p {
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+
+        .upload-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .url-input {
+            padding: 8px 12px;
+            background-color: #374151;
+            border: 1px solid #4b5563;
+            border-radius: 6px;
+            color: #ffffff;
+            width: 250px;
+        }
+
+        .url-input::placeholder {
+            color: #9ca3af;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        /* Selected Files */
+        .selected-files {
+            margin: 24px 0;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: between;
+            background-color: #1f2937;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #374151;
+            margin-bottom: 8px;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+        }
+
+        .file-details h4 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .file-details p {
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        .remove-btn {
+            background: transparent;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .remove-btn:hover {
+            color: #ef4444;
+            background-color: rgba(239, 68, 68, 0.1);
+        }
+
+        /* Upload Options */
+        .upload-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: end;
+            margin: 24px 0;
+        }
+
+        .form-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #d1d5db;
+            margin-bottom: 8px;
+        }
+
+        .select {
+            width: 100%;
+            padding: 8px 12px;
+            background-color: #374151;
+            border: 1px solid #4b5563;
+            border-radius: 6px;
+            color: #ffffff;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin: 24px 0;
+            display: none;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #374151;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #06b6d4;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        /* Upload Results */
+        .upload-results {
+            display: none;
+            margin-top: 32px;
+        }
+
+        .result-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .result-content {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .result-image {
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #4b5563;
+        }
+
+        .result-details {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .result-details h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .result-details .meta {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+
+        .embed-codes h5 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .embed-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .embed-label {
+            color: #d1d5db;
+            font-size: 14px;
+            width: 80px;
+            flex-shrink: 0;
+        }
+
+        .embed-input {
+            flex: 1;
+            padding: 6px 12px;
+            background-color: #374151;
+            border: 1px solid #4b5563;
+            border-radius: 4px;
+            color: #d1d5db;
+            font-size: 12px;
+        }
+
+        .copy-btn {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background-color: #111827;
+            padding: 64px 0;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .pricing h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 12px;
+            padding: 32px 24px;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .pricing-card.popular {
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 1px #06b6d4;
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            transform: rotate(12deg);
+        }
+
+        .badge-red { background-color: #dc2626; }
+        .badge-orange { background-color: #ea580c; }
+
+        .plan-name {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+
+        .plan-price {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .plan-price .currency {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .plan-price .amount {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .plan-billing {
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 24px;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin: 24px 0;
+        }
+
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 6px 0;
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        .check-icon {
+            color: #06b6d4;
+            width: 16px;
+            height: 16px;
+        }
+
+        .upgrade-btn {
+            width: 100%;
+            padding: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .btn-red { background-color: #dc2626; }
+        .btn-red:hover { background-color: #b91c1c; }
+        .btn-cyan { background-color: #0891b2; }
+        .btn-cyan:hover { background-color: #0e7490; }
+        .btn-gray { background-color: #4b5563; }
+        .btn-gray:hover { background-color: #374151; }
+
+        /* Footer */
+        .footer {
+            background-color: #111827;
+            border-top: 1px solid #374151;
+            padding: 32px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        /* Supported Formats */
+        .supported-formats {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .supported-formats p {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 16px;
+            color: #ffffff;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        .toast.success {
+            border-color: #10b981;
+        }
+
+        .toast.error {
+            border-color: #ef4444;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .header-left,
+            .header-right {
+                display: none;
+            }
+
+            .upload-controls {
+                flex-direction: column;
+            }
+
+            .url-input {
+                width: 100%;
+            }
+
+            .upload-options {
+                flex-direction: column;
+            }
+
+            .result-content {
+                flex-direction: column;
+            }
+
+            .embed-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .embed-label {
+                width: auto;
+                margin-bottom: 4px;
+            }
+        }
+    </style>
 </head>
-<body id="index" class="split">
-<header id="top-bar" class="top-bar">
-<div class="content-width">
-<div id="logo" class="top-bar-logo"><a href="https://imgbb.com"><img width="116px" height="24px" src="//simgbb.com/images/logo.png" alt="ImgBB"></a></div>
-<ul class="top-bar-left float-left">
-<li data-action="top-bar-menu-full" data-nav="mobile-menu" class="top-btn-el phone-show phablet-show hidden">
-<span class="top-btn-text"><span class="icon icon-bars"></span></span>
-</li>
-<li data-nav="about" class="phone-hide phablet-hide pop-btn pop-keep-click">
-<span class="top-btn-text"><span class="icon icon-circle-question"></span><span class="btn-text phone-hide phablet-hide">About</span><span class="arrow-down"></span></span>
-<div class="pop-box arrow-box arrow-box-top anchor-left">
-<div class="pop-box-inner pop-box-menu">
-<ul><li class="with-icon"><a href="https://imgbb.com/plugin"><span class="btn-icon icon-code"></span> Plugin</a></li><li class="with-icon"><a href="https://api.imgbb.com/"><span class="btn-icon icon-gear"></span> API</a></li><li class="with-icon"><a href="https://imgbb.com/tos"><span class="btn-icon icon-landmark"></span> Terms of service</a></li><li class="with-icon"><a href="https://imgbb.com/privacy"><span class="btn-icon icon-lock"></span> Privacy</a></li><li class="with-icon"><a href="https://imgbb.com/contact"><span class="btn-icon icon-at"></span> Contact</a></li></ul>
-</div>
-</div>
-</li>
-<li data-nav="language" class="phablet-hide phone-hide pop-btn">
-<span class="top-btn-text"><span class="icon icon-language"></span><span class="btn-text">EN</span><span class="arrow-down"></span></span>
-<div class="pop-box pbcols5 arrow-box arrow-box-top anchor-left">
-<div class="pop-box-inner pop-box-menu pop-box-menucols">
-<ul>
-<li><a href="https://ar.imgbb.com/" onclick="changeLanguage('ar');">العربية</a></li><li><a href="https://bg-bg.imgbb.com/" onclick="changeLanguage('bg-bg');">Български</a></li><li><a href="https://cs.imgbb.com/" onclick="changeLanguage('cs');">Čeština</a></li><li><a href="https://da.imgbb.com/" onclick="changeLanguage('da');">Dansk</a></li><li><a href="https://de.imgbb.com/" onclick="changeLanguage('de');">Deutsch</a></li><li><a href="https://el.imgbb.com/" onclick="changeLanguage('el');">Ελληνικά</a></li><li class="current"><a href="https://imgbb.com/" onclick="changeLanguage('en');">English</a></li><li><a href="https://es.imgbb.com/" onclick="changeLanguage('es');">Español</a></li><li><a href="https://et-ee.imgbb.com/" onclick="changeLanguage('et-ee');">Eesti (Eesti)</a></li><li><a href="https://fa.imgbb.com/" onclick="changeLanguage('fa');">فارسی</a></li><li><a href="https://fi.imgbb.com/" onclick="changeLanguage('fi');">Suomi</a></li><li><a href="https://fr.imgbb.com/" onclick="changeLanguage('fr');">Français</a></li><li><a href="https://he.imgbb.com/" onclick="changeLanguage('he');">עברית</a></li><li><a href="https://hr.imgbb.com/" onclick="changeLanguage('hr');">Hrvatski</a></li><li><a href="https://hu.imgbb.com/" onclick="changeLanguage('hu');">Magyar</a></li><li><a href="https://id.imgbb.com/" onclick="changeLanguage('id');">Bahasa Indonesia</a></li><li><a href="https://it.imgbb.com/" onclick="changeLanguage('it');">Italiano</a></li><li><a href="https://ja.imgbb.com/" onclick="changeLanguage('ja');">日本語</a></li><li><a href="https://ko.imgbb.com/" onclick="changeLanguage('ko');">한국어</a></li><li><a href="https://lt-lt.imgbb.com/" onclick="changeLanguage('lt-lt');">Lietuvių (Lietuva)</a></li><li><a href="https://nb.imgbb.com/" onclick="changeLanguage('nb');">‪Norsk Bokmål‬</a></li><li><a href="https://nl.imgbb.com/" onclick="changeLanguage('nl');">Nederlands</a></li><li><a href="https://pl.imgbb.com/" onclick="changeLanguage('pl');">Polski</a></li><li><a href="https://pt.imgbb.com/" onclick="changeLanguage('pt');">Português</a></li><li><a href="https://pt-br.imgbb.com/" onclick="changeLanguage('pt-br');">Português (Brasil)</a></li><li><a href="https://ru.imgbb.com/" onclick="changeLanguage('ru');">Русский</a></li><li><a href="https://sk.imgbb.com/" onclick="changeLanguage('sk');">Slovenčina</a></li><li><a href="https://sr-rs.imgbb.com/" onclick="changeLanguage('sr-rs');">Српски</a></li><li><a href="https://sv.imgbb.com/" onclick="changeLanguage('sv');">Svenska</a></li><li><a href="https://th.imgbb.com/" onclick="changeLanguage('th');">ไทย</a></li><li><a href="https://tr.imgbb.com/" onclick="changeLanguage('tr');">Türkçe</a></li><li><a href="https://uk.imgbb.com/" onclick="changeLanguage('uk');">Українська</a></li><li><a href="https://vi.imgbb.com/" onclick="changeLanguage('vi');">Tiếng Việt</a></li><li><a href="https://zh-cn.imgbb.com/" onclick="changeLanguage('zh-cn');">简体中文</a></li><li><a href="https://zh-tw.imgbb.com/" onclick="changeLanguage('zh-tw');">繁體中文</a></li></ul>
-</div>
-</div>
-</li>
-</ul>
-<ul class="top-bar-right float-right keep-visible">
-<li data-action="top-bar-upload" data-nav="upload" class="pop-btn"><span class="top-btn-text"><span class="icon icon-cloud-arrow-up"></span><span class="btn-text phone-hide phablet-hide">Upload</span></span></li>
-<li id="top-bar-signin" data-nav="signin" class="top-btn-el">
-<a href="https://imgbb.com/login" class="top-btn-text"><span class="icon icon-right-to-bracket"></span><span class="btn-text phone-hide phablet-hide">Sign in</span></a>
-</li>
-<li id="top-bar-signup" data-nav="signup" class="phone-hide top-btn-el">
-<a href="https://imgbb.com/signup" class="top-btn-text top-btn-create-account btn blue text"><span class="icon icon-user-plus phablet-hide tablet-hide laptop-hide desktop-hide"></span>Create account</a>
-</li>
-</ul>
-</div>
-</header><div id="home-cover">
-<div id="home-cover-content" class="c20 phone-c1 phablet-c1 fluid-column center-box padding-left-10 padding-right-10" data-trigger="anywhere-upload-input">
-<h1>Upload and share your images.</h1>
-<p class="c20 center-box text-align-center phone-hide phablet-hide">Drag and drop anywhere you want and start uploading your images now. 32 MB limit. Direct image links, BBCode and HTML thumbnails.</p>
-<div class="home-buttons"><a data-trigger="anywhere-upload-input" class="btn btn-big blue">Start uploading</a></div>
-</div>
-</div>
-<div id="anywhere-upload" class="upload-box upload-box--fixed upload-box--hidden queueEmpty" data-queue-size="0">
-<div class="content-width"><div class="upload-box-inner"><div class="upload-box-heading c16 center-box"><div class="upload-box-status">
-<div data-group="upload" style="padding: 80px 0;">
-<span class="icon icon-cloud-arrow-up cursor-pointer" data-trigger="anywhere-upload-input"></span>
-<div class="heading"><a data-trigger="anywhere-upload-input">Drag and drop or paste images here to upload</a></div>
-<div class="upload-box-status-text">You can also <a data-trigger="anywhere-upload-input">browse from your computer</a> or <a data-modal="form" data-target="anywhere-upload-paste-url">add image URLs</a>.</div>
-</div>
-<div data-group="upload-queue-ready" class="soft-hidden">
-<span class="icon icon-images" data-trigger="anywhere-upload-input"></span>
-<div class="heading">Edit or resize any image by clicking the image preview</div>
-<div class="upload-box-status-text">You can add more images from <a data-trigger="anywhere-upload-input">your computer</a> or <a data-modal="form" data-target="anywhere-upload-paste-url">add image URLs</a>.</div>
-</div>
-<div data-group="uploading" class="soft-hidden">
-<span class="icon icon-cloud-arrow-up"></span>
-<div class="heading">Uploading <span data-text="queue-size">0</span> <span data-text="queue-objects">image</span> (<span data-text="queue-progress">0</span>% complete)</div>
-<div class="upload-box-status-text">The queue is being uploaded, it should take just a few seconds to complete.</div>
-</div>
-<div data-group="upload-result" data-result="success" class="soft-hidden">
-<span class="icon icon-circle-check color-green"></span>
-<div class="heading">Upload complete</div>
-<div class="upload-box-status-text">
-<div data-group="guest" class="soft-hidden">You can <a data-modal="form" data-target="form-uploaded-create-album">create a new album</a> with the content just uploaded. You must <a href="https://imgbb.com/signup">create an account</a> or <a href="https://imgbb.com/login">sign in</a> to save this content into your account.</div>
-</div>
-</div>
-<div data-group="upload-result" data-result="error" class="soft-hidden">
-<span class="icon icon-xmark color-red"></span>
-<div class="heading">No <span data-text="queue-objects">image</span> have been uploaded</div>
-<div class="upload-box-status-text">Some errors have occurred and the system couldn't process your request.</div>
-</div>
-</div>
-</div>
-<input id="anywhere-upload-input" data-action="anywhere-upload-input" class="hidden-visibility" type="file" accept="image/*, .jpg,.png,.bmp,.gif,.tif,.webp,.heic,.avif,.pdf,.jpeg,.tiff,.heif" multiple>
-<input id="anywhere-upload-input-camera" data-action="anywhere-upload-input" class="hidden-visibility" type="file" capture="camera" accept="image/*">
-<ul id="anywhere-upload-queue" class="upload-box-queue content-width soft-hidden" data-group="upload-queue"></ul>
-<div id="anywhere-upload-submit" class="btn-container text-align-center margin-bottom-0 soft-hidden" data-group="upload-queue-ready">
-<div data-group="upload-queue-ready">
-<div class="input-label upload-input-col center-box text-align-left"><label for="upload-expiration">Auto delete image</label><select type="text" name="upload-expiration" id="upload-expiration" class="text-input"><option value="" selected>Don't autodelete</option><option value="PT5M">After 5 minutes</option><option value="PT15M">After 15 minutes</option><option value="PT30M">After 30 minutes</option><option value="PT1H">After 1 hour</option><option value="PT3H">After 3 hours</option><option value="PT6H">After 6 hours</option><option value="PT12H">After 12 hours</option><option value="P1D">After 1 day</option><option value="P2D">After 2 days</option><option value="P3D">After 3 days</option><option value="P4D">After 4 days</option><option value="P5D">After 5 days</option><option value="P6D">After 6 days</option><option value="P1W">After 1 week</option><option value="P2W">After 2 weeks</option><option value="P3W">After 3 weeks</option><option value="P1M">After 1 month</option><option value="P2M">After 2 months</option><option value="P3M">After 3 months</option><option value="P4M">After 4 months</option><option value="P5M">After 5 months</option><option value="P6M">After 6 months</option></select></div>
-<button class="btn btn-big green" data-action="upload">Upload</button>
-</div>
-<div data-group="uploading" class="soft-hidden"><button class="btn btn-big disabled off" disabled>Uploading</button> <span class="btn-alt">or <a data-action="cancel-upload" data-button="close-cancel">cancel</a><a data-action="cancel-upload-remaining" data-button="close-cancel" class="soft-hidden">cancel remaining</a></span></div>
-</div>
-<div id="anywhere-upload-report">
-<div data-group="upload-result" data-result="mixted" class="soft-hidden margin-top-10 text-align-center upload-box-status-text">Note: Some images couldn't be uploaded. <a data-modal="simple" data-target="failed-upload-result">learn more</a></div>
-<div data-group="upload-result" data-result="error" class="soft-hidden margin-top-10 text-align-center upload-box-status-text">Check the <a data-modal="simple" data-target="failed-upload-result">error report</a> for more information.</div>
-</div>
-<div class="upload-box-allowed-files position-absolute"><span>JPG PNG BMP GIF TIF WEBP HEIC AVIF PDF</span><span> 32 MB</span></div>
-<div class="upload-box-close position-absolute">
-<a data-action="reset-upload" data-button="close-cancel"><span class="btn-icon icon-rotate-left"></span><span class="btn-text">reset</span></a>
-<a data-action="close-upload" data-button="close-cancel"><span class="btn-icon icon-xmark"></span><span class="btn-text">close</span></a>
-<a data-action="cancel-upload" data-button="close-cancel"><span class="btn-icon icon-xmark"></span><span class="btn-text">cancel</span></a>
-<a data-action="cancel-upload-remaining" data-button="close-cancel"><span class="btn-icon icon-xmark"></span><span class="btn-text">cancel remaining</span></a>
-</div>
-<div data-group="upload-result" data-result="success" class="c16 center-box soft-hidden">
-<div class="input-label margin-bottom-0 copy-hover-display">
-<label for="uploaded-embed-toggle">Embed codes</label>
-<div class="c7 margin-bottom-10">
-<select name="uploaded-embed-toggle" id="uploaded-embed-toggle" class="text-input" data-combo="uploaded-embed-toggle-combo" onchange="changeEmbed(this.value);">
-<optgroup label="Links"><option value="viewer-links" data-size="viewer">Viewer links</option></optgroup>
-<optgroup label="HTML Codes"><option value="html-embed-medium" data-size="medium">HTML full linked</option><option value="html-embed-thumbnail" data-size="thumb">HTML thumbnail linked</option></optgroup>
-<optgroup label="BBCodes"><option value="bbcode-embed-medium" data-size="medium">BBCode full linked</option><option value="bbcode-embed-thumbnail" data-size="thumb">BBCode thumbnail linked</option></optgroup>
-</select>
-</div>
-<div id="uploaded-embed-toggle-combo">
-<div data-combo-value="viewer-links" class="switch-combo"><textarea id="uploaded-embed-code-0" class="r2 resize-vertical" name="viewer-links" data-size="viewer" data-focus="select-all"></textarea><button class="input-action" data-action="copy" data-action-target="#uploaded-embed-code-0">copy</button></div>
-<div data-combo-value="html-embed-medium" class="switch-combo soft-hidden"><textarea id="uploaded-embed-code-1" class="r2 resize-vertical" name="html-embed-medium" data-size="medium" data-focus="select-all"></textarea><button class="input-action" data-action="copy" data-action-target="#uploaded-embed-code-1">copy</button></div>
-<div data-combo-value="html-embed-thumbnail" class="switch-combo soft-hidden"><textarea id="uploaded-embed-code-2" class="r2 resize-vertical" name="html-embed-thumbnail" data-size="thumb" data-focus="select-all"></textarea><button class="input-action" data-action="copy" data-action-target="#uploaded-embed-code-2">copy</button></div>
-<div data-combo-value="bbcode-embed-medium" class="switch-combo soft-hidden"><textarea id="uploaded-embed-code-3" class="r2 resize-vertical" name="bbcode-embed-medium" data-size="medium" data-focus="select-all"></textarea><button class="input-action" data-action="copy" data-action-target="#uploaded-embed-code-3">copy</button></div>
-<div data-combo-value="bbcode-embed-thumbnail" class="switch-combo soft-hidden"><textarea id="uploaded-embed-code-4" class="r2 resize-vertical" name="bbcode-embed-thumbnail" data-size="thumb" data-focus="select-all"></textarea><button class="input-action" data-action="copy" data-action-target="#uploaded-embed-code-4">copy</button></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="hidden">
-<div id="anywhere-upload-item-template">
-<li class="queue-item">
-<a class="block image-link" data-group="image-link" href="#file" target="_blank"></a>
-<div class="result done block"><span class="icon icon-circle-check"></span></div>
-<div class="result failed block"><span class="icon icon-triangle-exclamation"></span></div>
-<div class="load-url block"><span class="big-icon icon-network-wired"></span></div>
-<div class="preview block"></div>
-<div class="progress block">
-<div class="progress-percent"><b data-text="progress-percent">0</b><span>%</span></div>
-<div class="progress-bar" data-content="progress-bar"></div>
-</div>
-<div class="block edit" data-action="edit" title="Edit">
-</div>
-<div class="queue-item-button edit" data-action="edit" title="Edit">
-<span class="icon icon-pen-to-square"></span>
-</div>
-<div class="queue-item-button cancel hover-display" data-action="cancel" title="Remove">
-<span class="icon icon-xmark"></span>
-</div>
-</li>
-</div>
-<div id="anywhere-upload-edit-item">
-<span class="modal-box-title">Edit</span>
-<div class="modal-form">
-<div class="image-preview"></div>
-<div class="input-label">
-<label for="form-title">Title <span class="optional">optional</span></label>
-<input type="text" id="form-title" name="form-title" class="text-input" value="" maxlength="100">
-</div>
-<div class="input-label" data-action="resize-combo-input">
-<label for="form-width" class="display-block-forced">Resize image</label>
-<div class="c6 overflow-auto clear-both">
-<div class="c3 float-left">
-<input type="number" min="16" pattern="\d+" name="form-width" id="form-width" class="text-input" title="Width" rel="template-tooltip" data-tiptip="top">
-</div>
-<div class="c3 float-left margin-left-10">
-<input type="number" min="16" pattern="\d+" name="form-height" id="form-height" class="text-input" title="Height" rel="template-tooltip" data-tiptip="top">
-</div>
-</div>
-<div class="input-below font-size-small" data-content="animated-gif-warning">Note: Animated GIF images won't be resized.</div>
-</div>
-<div class="input-label"><label for="form-description">Description <span class="optional">optional</span></label><textarea id="form-description" name="form-description" class="text-input no-resize" placeholder="Brief description of this image"></textarea></div>
-</div>
-</div>
-<div id="anywhere-upload-paste-url" data-submit-fn="CHV.fn.uploader.pasteURL"><span class="modal-box-title">Add image URLs</span><div class="modal-form"><textarea class="resize-vertical" placeholder="Add the image URLs here" name="urls"></textarea></div></div>
-</div>
-<div data-modal="form-uploaded-create-album" class="hidden" data-is-xhr data-submit-fn="CHV.fn.submit_upload_edit" data-ajax-deferred="CHV.fn.complete_upload_edit">
-<span class="modal-box-title">Create album</span>
-<p>The uploaded content will be moved to this newly created album. You must <a href="https://imgbb.com/signup">create an account</a> or <a href="https://imgbb.com/login">sign in</a> if you want to edit this album later on.</p>
-<div class="modal-form">
-<div name="move-new-album" id="move-new-album" data-content="form-new-album" data-view="switchable">
-<div class="c7 input-label">
-	    <label for="form-album-name">Album name</label>
-    <input type="text" name="form-album-name" class="text-input" value="" placeholder="Album name" maxlength="100" required>
-	</div>
-<div class="input-label">
-	<label for="form-album-description">Album description <span class="optional">optional</span></label>
-	<textarea id="form-album-description" name="form-album-description" class="text-input no-resize" placeholder="Brief description of this album"></textarea>
-</div>
-<div class="input-label overflow-auto">
-    <div class="c7 grid-columns">
-		<label for="form-privacy">Album privacy</label>
-		<select name="form-privacy" id="form-privacy" class="text-input" data-combo="form-privacy-combo" rel="template-tooltip" data-tiptip="right" data-title="Who can view this content">
-<option value="public">Public</option><option value="private_but_link">Private (anyone with the link)</option><option value="password">Private (password protected)</option>		</select>
-	</div>
-</div>
-<div id="form-privacy-combo">
-	<div data-combo-value="password" class="switch-combo soft-hidden">
-		<div class="input-label overflow-auto">
-			<div class="c7 grid-columns">
-				<label for="form-album-password">Album password</label>
-				<input type="text" name="form-album-password" class="text-input" value="" data-required>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-</div>
-</div>
-<div data-modal="failed-upload-result" class="hidden"><span class="modal-box-title">Error report</span><ul data-content="failed-upload-result" style="max-height: 115px;" class="overflow-auto"></ul></div>
-</div><div id="modal-share" class="hidden">
-<span class="modal-box-title">Share</span>
-<div class="image-preview"></div>
-<p class="highlight margin-bottom-20 font-size-small text-align-center" data-content="privacy-private">__privacy_notes__</p>
-<ul class="panel-share-networks">
-<li><a data-href="http://www.facebook.com/share.php?u=__url__" class="popup-link btn-32 btn-social btn-facebook" rel="tooltip" data-tiptip="top" title="Facebook"><span class="btn-icon fab icon-facebook"></span></a></li>
-<li><a data-href="https://twitter.com/intent/tweet?original_referer=__url__&url=__url__&text=__title__&via=imgbb_com" class="popup-link btn-32 btn-social btn-twitter" rel="tooltip" data-tiptip="top" title="Twitter"><span class="btn-icon fab icon-twitter"></span></a></li>
-<li><a data-href="whatsapp://send?text=__title__ - view on ImgBB: __url__" class="popup-link btn-32 btn-social btn-whatsapp" rel="tooltip" data-tiptip="top" title="WhatsApp"><span class="btn-icon fab icon-whatsapp"></span></a></li>
-<li><a data-href="http://vk.com/share.php?url=__url__" class="popup-link btn-32 btn-social btn-vk" rel="tooltip" data-tiptip="top" title="VK"><span class="btn-icon fab icon-vk"></span></a></li>
-<li><a data-href="http://reddit.com/submit?url=__url__" class="popup-link btn-32 btn-social btn-reddit" rel="tooltip" data-tiptip="top" title="reddit"><span class="btn-icon fab icon-reddit"></span></a></li>
-<li><a data-href="http://www.blogger.com/blog-this.g?n=__title__&source=&b=%3Ca%20href%3D%22__url__%22%20title%3D%22__title__%22%3E%3Cimg%20src%3D%22__image__%22%20%2F%3E%3C%2Fa%3E" class="popup-link btn-32 btn-social btn-blogger" rel="tooltip" data-tiptip="top" title="Blogger"><span class="btn-icon fab icon-blogger"></span></a></li>
-<li><a data-href="http://www.tumblr.com/share/photo?source=__image__&caption=__title__&clickthru=__url__&title=__title__" class="popup-link btn-32 btn-social btn-tumblr" rel="tooltip" data-tiptip="top" title="Tumblr."><span class="btn-icon fab icon-tumblr"></span></a></li>
-<li><a data-href="http://www.pinterest.com/pin/create/bookmarklet/?media=__image__&url=__url__&is_video=false&description=description&title=__title__" class="popup-link btn-32 btn-social btn-pinterest" rel="tooltip" data-tiptip="top" title="Pinterest"><span class="btn-icon fab icon-pinterest"></span></a></li>
-<li><a data-href="mailto:?subject=__title__&body=__url__" class="popup-link btn-32 btn-social btn-at" rel="tooltip" data-tiptip="top" title="Email"><span class="btn-icon fas icon-at"></span></a></li></ul>
-<div class="input-label margin-bottom-0">
-<label for="modal-share-url">Link</label>
-<div class="position-relative">
-<input type="text" name="modal-share-url" id="modal-share-url" class="text-input" value="__url__" data-focus="select-all" readonly>
-<button class="input-action" data-action="copy" data-action-target="#modal-share-url" value="">copy</button>
-</div>
-</div>
-</div><div class="about" id="home-cover-content"> 
-<div id="inner-cover-pricing" class="inner-cover"><div class="c22 center-box"><h1>ImgBB Pro account</h1>
-<p>ImgBB is a free image hosting service. Upgrade to unlock all the features.</p>
-</div></div>
-<br/>
-<div id="pricing-tier" class="c22 phablet-c1 center-box overflow-visible">
-<div class="pricing-tier-box grid-columns c7 phone-c1 phablet-c1 margin-right-30">
-<h2 class="background-red">3 Year Pro</h2>
-<div class="pricing-tier-price"><span class="value"><span class="currency">$</span>3.99</span><span class="desc">Billed $143.64</span></div>
-<a href="https://imgbb.com/login" class="btn btn-big red c5">UPGRADE</a>
-<ul class="sentence-wrap text-align-left"><li>No Ads</li><li>Direct Linking</li><li>Unlimited space</li><li>Replace image feature</li><li>64 MB file size per image</li><li><a href="https://api.imgbb.com/" target="_blank">API Access</a></li></ul>
-<div class="pricing-ribbon"><div>69% OFF</div></div>
-</div>
-<div class="pricing-tier-box grid-columns c7 phone-c1 phablet-c1 margin-right-30">
-<h2 class="background-blue">Annual Plan</h2>
-<div class="pricing-tier-price"><span class="value"><span class="currency">$</span>7.99</span><span class="desc">Billed $95.88</span></div>
-<a href="https://imgbb.com/login" class="btn btn-big blue c5">UPGRADE</a>
-<ul class="sentence-wrap text-align-left"><li>No Ads</li><li>Direct Linking</li><li>Unlimited space</li><li>Replace image feature</li><li>64 MB file size per image</li><li><a href="https://api.imgbb.com/" target="_blank">API Access</a></li></ul>
-<div class="pricing-ribbon"><div>38% OFF</div></div>
-</div>
-<div class="pricing-tier-box grid-columns c7 phone-c1 phablet-c1">
-<h2 class="background-grey">Monthly Plan</h2>
-<div class="pricing-tier-price"><span class="value"><span class="currency">$</span>12.99</span><span class="desc">&nbsp;</span></div>
-<a href="https://imgbb.com/login" class="btn btn-big grey c5">UPGRADE</a>
-<ul class="sentence-wrap text-align-left"><li>No Ads</li><li>Direct Linking</li><li>Unlimited space</li><li>Replace image feature</li><li>64 MB file size per image</li><li><a href="https://api.imgbb.com/" target="_blank">API Access</a></li></ul>
-</div>
-</div>
-<div class="clear-both"></div>
-<br /><br /></div>
-<div class="footer">
-<ul><li class="with-icon"><a href="https://imgbb.com/plugin"><span class="btn-icon icon-code"></span> Plugin</a></li><li class="with-icon"><a href="https://api.imgbb.com/"><span class="btn-icon icon-gear"></span> API</a></li><li class="with-icon"><a href="https://imgbb.com/contact"><span class="btn-icon icon-at"></span> Contact</a></li></ul>
-Use of ImgBB constitutes acceptance of our <a href="https://imgbb.com/tos" target="_blank">Terms of Service</a> and <a href="https://imgbb.com/privacy" target="_blank">Privacy Policy</a>.
-</div>
-<script defer src="//simgbb.com/8337/jquery2.js" onload="jQueryLoaded(this, event)"></script>
-<script defer src="//simgbb.com/8337/ibb.js" id="ibbjs"></script><script>
-document.getElementById("ibbjs").addEventListener("load", function () {
-PF.obj.devices = window.devices;
-PF.fn.window_to_device = window.window_to_device;
-PF.obj.config.base_url="https://imgbb.com";
-PF.obj.config.json_api="https://imgbb.com/json";
-PF.obj.config.listing.items_per_page="32";
-PF.obj.config.auth_token="82bb9af70a6a83c0d3baf567e800d3c4a1353921";
-PF.obj.l10n=[];
-CHV.obj.embed_tpl={"links":{"label":"Links","options":{"viewer-links":{"label":"Viewer links","template":"%URL_VIEWER%","size":"viewer"}}},"html-codes":{"label":"HTML Codes","options":{"html-embed-medium":{"label":"HTML full linked","template":"<a href=\"%URL_VIEWER_PREVIEW%\"><img src=\"%MEDIUM_URL%\" alt=\"%MEDIUM_NAME%\" border=\"0\"><\/a>","size":"medium"},"html-embed-thumbnail":{"label":"HTML thumbnail linked","template":"<a href=\"%URL_VIEWER_THUMB%\"><img src=\"%THUMB_URL%\" alt=\"%THUMB_NAME%\" border=\"0\"><\/a>","size":"thumb"}}},"bbcodes":{"label":"BBCodes","options":{"bbcode-embed-medium":{"label":"BBCode full linked","template":"[url=%URL_VIEWER_PREVIEW%][img]%MEDIUM_URL%[\/img][\/url]","size":"medium"},"bbcode-embed-thumbnail":{"label":"BBCode thumbnail linked","template":"[url=%URL_VIEWER_THUMB%][img]%THUMB_URL%[\/img][\/url]","size":"thumb"}}}};
-CHV.obj.config={"image":{"max_filesize":32000000,"load_max_filesize":8000000},"upload":{"image_types":["jpg","png","bmp","gif","tif","webp","heic","avif","pdf","jpeg","tiff","heif"]},"listing":{"viewer":true}};ibb();
-});
-</script>
+<body>
+    <!-- Header -->
+    <header class=\"header\">
+        <div class=\"container\">
+            <div class=\"header-content\">
+                <div class=\"header-left\">
+                    <button class=\"btn btn-ghost\">About ▼</button>
+                    <button class=\"btn btn-ghost\">🌐 EN ▼</button>
+                </div>
+                
+                <div class=\"header-center\">
+                    <a href=\"#\" class=\"logo\">Hayun</a>
+                </div>
+                
+                <div class=\"header-right\">
+                    <button class=\"btn btn-ghost\">📤 Upload</button>
+                    <button class=\"btn btn-ghost\">🔑 Sign in</button>
+                    <button class=\"btn btn-primary\">👤 Create account</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class=\"hero\">
+        <div class=\"container\">
+            <div class=\"hero-content\">
+                <h1>Upload and share your images.</h1>
+                <p>
+                    Drag and drop anywhere you want and start uploading your images now. 
+                    <span class=\"accent\">32 MB limit</span>. 
+                    Direct image links, BBCode and HTML thumbnails.
+                </p>
+                <button class=\"btn btn-primary btn-hero\" onclick=\"scrollToUpload()\">START UPLOADING</button>
+                
+                <div class=\"upload-section\" id=\"upload-section\">
+                    <!-- Upload Dropzone -->
+                    <div class=\"dropzone\" id=\"dropzone\">
+                        <div class=\"upload-icon\">📤</div>
+                        <h3>Drag and drop or paste images here to upload</h3>
+                        <p>You can also browse from your computer or add image URLs.</p>
+                        
+                        <div class=\"upload-controls\">
+                            <button class=\"btn btn-primary\" onclick=\"document.getElementById('fileInput').click()\">
+                                🖼️ Browse Files
+                            </button>
+                            <input type=\"url\" class=\"url-input\" id=\"urlInput\" placeholder=\"Paste image URL here\">
+                            <button class=\"btn btn-ghost\" onclick=\"addImageUrl()\">🔗</button>
+                        </div>
+                        
+                        <input type=\"file\" id=\"fileInput\" class=\"file-input\" multiple accept=\"image/*,.pdf\">
+                    </div>
+
+                    <!-- Selected Files -->
+                    <div class=\"selected-files\" id=\"selectedFiles\" style=\"display: none;\">
+                        <h4>Selected Files (<span id=\"fileCount\">0</span>)</h4>
+                        <div id=\"fileList\"></div>
+                    </div>
+
+                    <!-- Upload Options -->
+                    <div class=\"upload-options\">
+                        <div class=\"form-group\">
+                            <label>Auto delete image</label>
+                            <select class=\"select\" id=\"autoDelete\">
+                                <option value=\"never\">Don't auto delete</option>
+                                <option value=\"5m\">After 5 minutes</option>
+                                <option value=\"15m\">After 15 minutes</option>
+                                <option value=\"30m\">After 30 minutes</option>
+                                <option value=\"1h\">After 1 hour</option>
+                                <option value=\"3h\">After 3 hours</option>
+                                <option value=\"6h\">After 6 hours</option>
+                                <option value=\"12h\">After 12 hours</option>
+                                <option value=\"1d\">After 1 day</option>
+                                <option value=\"2d\">After 2 days</option>
+                                <option value=\"3d\">After 3 days</option>
+                                <option value=\"1w\">After 1 week</option>
+                                <option value=\"1m\">After 1 month</option>
+                            </select>
+                        </div>
+                        <button class=\"btn btn-primary\" id=\"uploadBtn\" onclick=\"startUpload()\">Upload</button>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class=\"progress-container\" id=\"progressContainer\">
+                        <div class=\"progress-info\">
+                            <span id=\"progressText\">Uploading images...</span>
+                            <span id=\"progressPercent\">0% complete</span>
+                        </div>
+                        <div class=\"progress-bar\">
+                            <div class=\"progress-fill\" id=\"progressFill\"></div>
+                        </div>
+                    </div>
+
+                    <!-- Upload Results -->
+                    <div class=\"upload-results\" id=\"uploadResults\">
+                        <div style=\"text-align: center; margin-bottom: 24px;\">
+                            <h3>Upload complete</h3>
+                            <p style=\"color: #9ca3af; margin-top: 8px;\">
+                                You can create a new album with the content just uploaded. You must create an account or sign in to save this content into your account.
+                            </p>
+                        </div>
+                        <div id=\"resultsList\"></div>
+                        <div style=\"text-align: center; margin-top: 24px;\">
+                            <button class=\"btn btn-primary\" onclick=\"resetUpload()\">Upload More Images</button>
+                        </div>
+                    </div>
+
+                    <!-- Supported Formats -->
+                    <div class=\"supported-formats\">
+                        <p>JPG PNG BMP GIF TIF WEBP HEIC AVIF PDF • 32 MB limit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class=\"pricing\">
+        <div class=\"container\">
+            <div class=\"pricing-header\">
+                <h2>Hayun Pro account</h2>
+                <p style=\"color: #d1d5db; font-size: 18px; max-width: 600px; margin: 0 auto;\">
+                    Hayun is a free image hosting service. Upgrade to unlock all the features.
+                </p>
+            </div>
+            
+            <div class=\"pricing-grid\">
+                <!-- 3 Year Pro -->
+                <div class=\"pricing-card popular\">
+                    <div class=\"discount-badge badge-red\">69% OFF</div>
+                    <div class=\"plan-name\">3 YEAR PRO</div>
+                    <div class=\"plan-price\">
+                        <span class=\"currency\">$</span><span class=\"amount\">3.99</span>
+                    </div>
+                    <div class=\"plan-billing\">Billed $143.64</div>
+                    <button class=\"btn upgrade-btn btn-red\">UPGRADE</button>
+                    <ul class=\"plan-features\">
+                        <li><span class=\"check-icon\">✓</span> No Ads</li>
+                        <li><span class=\"check-icon\">✓</span> Direct Linking</li>
+                        <li><span class=\"check-icon\">✓</span> Unlimited space</li>
+                        <li><span class=\"check-icon\">✓</span> Replace image feature</li>
+                        <li><span class=\"check-icon\">✓</span> 64 MB file size per image</li>
+                        <li><span class=\"check-icon\">✓</span> API Access</li>
+                    </ul>
+                </div>
+
+                <!-- Annual Plan -->
+                <div class=\"pricing-card\">
+                    <div class=\"discount-badge badge-orange\">38% OFF</div>
+                    <div class=\"plan-name\">ANNUAL PLAN</div>
+                    <div class=\"plan-price\">
+                        <span class=\"currency\">$</span><span class=\"amount\">7.99</span>
+                    </div>
+                    <div class=\"plan-billing\">Billed $95.88</div>
+                    <button class=\"btn upgrade-btn btn-cyan\">UPGRADE</button>
+                    <ul class=\"plan-features\">
+                        <li><span class=\"check-icon\">✓</span> No Ads</li>
+                        <li><span class=\"check-icon\">✓</span> Direct Linking</li>
+                        <li><span class=\"check-icon\">✓</span> Unlimited space</li>
+                        <li><span class=\"check-icon\">✓</span> Replace image feature</li>
+                        <li><span class=\"check-icon\">✓</span> 64 MB file size per image</li>
+                        <li><span class=\"check-icon\">✓</span> API Access</li>
+                    </ul>
+                </div>
+
+                <!-- Monthly Plan -->
+                <div class=\"pricing-card\">
+                    <div class=\"plan-name\">MONTHLY PLAN</div>
+                    <div class=\"plan-price\">
+                        <span class=\"currency\">$</span><span class=\"amount\">12.99</span>
+                    </div>
+                    <div class=\"plan-billing\">&nbsp;</div>
+                    <button class=\"btn upgrade-btn btn-gray\">UPGRADE</button>
+                    <ul class=\"plan-features\">
+                        <li><span class=\"check-icon\">✓</span> No Ads</li>
+                        <li><span class=\"check-icon\">✓</span> Direct Linking</li>
+                        <li><span class=\"check-icon\">✓</span> Unlimited space</li>
+                        <li><span class=\"check-icon\">✓</span> Replace image feature</li>
+                        <li><span class=\"check-icon\">✓</span> 64 MB file size per image</li>
+                        <li><span class=\"check-icon\">✓</span> API Access</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style=\"text-align: center; margin-top: 48px;\">
+                <p style=\"color: #9ca3af; font-size: 14px;\">
+                    All plans include unlimited bandwidth, 99.9% uptime guarantee, and 24/7 customer support. No setup fees or hidden charges.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        <div class=\"container\">
+            <p>© 2024 Hayun. All rights reserved. Free image hosting service.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class=\"toast\" id=\"toast\">
+        <div id=\"toastMessage\">Upload complete!</div>
+    </div>
+
+    <script>
+        // Global variables
+        let selectedFiles = [];
+        let isUploading = false;
+
+        // Initialize event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropzone = document.getElementById('dropzone');
+            const fileInput = document.getElementById('fileInput');
+            const urlInput = document.getElementById('urlInput');
+
+            // Drag and drop events
+            dropzone.addEventListener('dragover', handleDragOver);
+            dropzone.addEventListener('dragleave', handleDragLeave);
+            dropzone.addEventListener('drop', handleDrop);
+
+            // File input change
+            fileInput.addEventListener('change', handleFileSelect);
+
+            // URL input enter key
+            urlInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    addImageUrl();
+                }
+            });
+        });
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            document.getElementById('dropzone').classList.add('drag-over');
+        }
+
+        function handleDragLeave(e) {
+            e.preventDefault();
+            document.getElementById('dropzone').classList.remove('drag-over');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            document.getElementById('dropzone').classList.remove('drag-over');
+            const files = Array.from(e.dataTransfer.files);
+            addFiles(files);
+        }
+
+        function handleFileSelect(e) {
+            const files = Array.from(e.target.files);
+            addFiles(files);
+        }
+
+        function addFiles(files) {
+            selectedFiles = [...selectedFiles, ...files];
+            updateFileList();
+        }
+
+        function addImageUrl() {
+            const urlInput = document.getElementById('urlInput');
+            const url = urlInput.value.trim();
+            
+            if (url) {
+                const urlFile = {
+                    name: url.split('/').pop() || 'image-from-url',
+                    size: 0,
+                    type: 'image/jpeg',
+                    url: url,
+                    isUrl: true
+                };
+                selectedFiles.push(urlFile);
+                urlInput.value = '';
+                updateFileList();
+            }
+        }
+
+        function updateFileList() {
+            const selectedFilesDiv = document.getElementById('selectedFiles');
+            const fileList = document.getElementById('fileList');
+            const fileCount = document.getElementById('fileCount');
+
+            if (selectedFiles.length === 0) {
+                selectedFilesDiv.style.display = 'none';
+                return;
+            }
+
+            selectedFilesDiv.style.display = 'block';
+            fileCount.textContent = selectedFiles.length;
+
+            fileList.innerHTML = selectedFiles.map((file, index) => `
+                <div class=\"file-item\">
+                    <div class=\"file-info\">
+                        <div style=\"color: #06b6d4;\">🖼️</div>
+                        <div class=\"file-details\">
+                            <h4>${file.name}</h4>
+                            <p>${file.isUrl ? 'From URL' : formatFileSize(file.size)}</p>
+                        </div>
+                    </div>
+                    <button class=\"remove-btn\" onclick=\"removeFile(${index})\">✕</button>
+                </div>
+            `).join('');
+        }
+
+        function removeFile(index) {
+            selectedFiles.splice(index, 1);
+            updateFileList();
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+        }
+
+        function scrollToUpload() {
+            document.getElementById('upload-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function startUpload() {
+            if (selectedFiles.length === 0) {
+                showToast('Please select or drop files to upload', 'error');
+                return;
+            }
+
+            if (isUploading) return;
+
+            isUploading = true;
+            document.getElementById('uploadBtn').disabled = true;
+            document.getElementById('progressContainer').style.display = 'block';
+
+            // Simulate upload progress
+            simulateUpload();
+        }
+
+        function simulateUpload() {
+            let progress = 0;
+            const progressFill = document.getElementById('progressFill');
+            const progressPercent = document.getElementById('progressPercent');
+
+            const interval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    completeUpload();
+                }
+                
+                progressFill.style.width = progress + '%';
+                progressPercent.textContent = Math.round(progress) + '% complete';
+            }, 200);
+        }
+
+        function completeUpload() {
+            // Hide upload form and progress
+            document.getElementById('dropzone').style.display = 'none';
+            document.getElementById('selectedFiles').style.display = 'none';
+            document.querySelector('.upload-options').style.display = 'none';
+            document.getElementById('progressContainer').style.display = 'none';
+            document.querySelector('.supported-formats').style.display = 'none';
+
+            // Show results
+            document.getElementById('uploadResults').style.display = 'block';
+
+            // Generate mock results
+            const results = selectedFiles.map((file, index) => {
+                const id = Date.now() + index;
+                const filename = file.name;
+                const imageUrl = file.url || `https://picsum.photos/800/600?random=${id}`;
+                const directLink = `https://hayun.example.com/${id}/${filename}`;
+                
+                return {
+                    id: id,
+                    filename: filename,
+                    url: imageUrl,
+                    thumbnail: imageUrl,
+                    size: file.isUrl ? 'Unknown' : formatFileSize(file.size),
+                    directLink: directLink,
+                    bbCode: `[img]${directLink}[/img]`,
+                    htmlCode: `<img src=\"${directLink}\" alt=\"${filename}\" />`
+                };
+            });
+
+            displayResults(results);
+            showToast(`Successfully uploaded ${results.length} image(s)!`, 'success');
+            
+            isUploading = false;
+        }
+
+        function displayResults(results) {
+            const resultsList = document.getElementById('resultsList');
+            
+            resultsList.innerHTML = results.map(result => `
+                <div class=\"result-card\">
+                    <div class=\"result-content\">
+                        <img src=\"${result.thumbnail}\" alt=\"${result.filename}\" class=\"result-image\">
+                        <div class=\"result-details\">
+                            <h4>${result.filename}</h4>
+                            <div class=\"meta\">${result.size} • Uploaded ${new Date().toLocaleDateString()}</div>
+                            
+                            <div class=\"embed-codes\">
+                                <h5>Embed codes</h5>
+                                
+                                <div class=\"embed-row\">
+                                    <div class=\"embed-label\">Direct link:</div>
+                                    <input type=\"text\" class=\"embed-input\" value=\"${result.directLink}\" readonly>
+                                    <button class=\"btn copy-btn\" onclick=\"copyToClipboard('${result.directLink}', 'Direct link')\">📋</button>
+                                </div>
+                                
+                                <div class=\"embed-row\">
+                                    <div class=\"embed-label\">HTML:</div>
+                                    <input type=\"text\" class=\"embed-input\" value=\"${result.htmlCode.replace(/\"/g, '&quot;')}\" readonly>
+                                    <button class=\"btn copy-btn\" onclick=\"copyToClipboard('${result.htmlCode}', 'HTML code')\">📋</button>
+                                </div>
+                                
+                                <div class=\"embed-row\">
+                                    <div class=\"embed-label\">BBCode:</div>
+                                    <input type=\"text\" class=\"embed-input\" value=\"${result.bbCode}\" readonly>
+                                    <button class=\"btn copy-btn\" onclick=\"copyToClipboard('${result.bbCode}', 'BBCode')\">📋</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function copyToClipboard(text, type) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`${type} copied to clipboard!`, 'success');
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showToast(`${type} copied to clipboard!`, 'success');
+            });
+        }
+
+        function resetUpload() {
+            // Reset all states
+            selectedFiles = [];
+            isUploading = false;
+            
+            // Show upload form
+            document.getElementById('dropzone').style.display = 'block';
+            document.querySelector('.upload-options').style.display = 'flex';
+            document.querySelector('.supported-formats').style.display = 'block';
+            
+            // Hide results
+            document.getElementById('uploadResults').style.display = 'none';
+            document.getElementById('selectedFiles').style.display = 'none';
+            document.getElementById('progressContainer').style.display = 'none';
+            
+            // Reset form
+            document.getElementById('uploadBtn').disabled = false;
+            document.getElementById('fileInput').value = '';
+            document.getElementById('urlInput').value = '';
+            
+            // Reset progress
+            document.getElementById('progressFill').style.width = '0%';
+            document.getElementById('progressPercent').textContent = '0% complete';
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            
+            toastMessage.textContent = message;
+            toast.className = `toast ${type}`;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
 </body>
-</html>
+</html>"
